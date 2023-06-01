@@ -2,28 +2,6 @@ import folium
 import time
 
 # functies
-def get_direction(heading):
-
-    if heading == 0:
-        direction = "north"
-    elif heading < 90:
-        direction = "NE"
-    elif heading == 90:
-        direction = "east"
-    elif 90 < heading < 180:
-        direction = "SE"
-    elif heading == 180:
-        direction = "south"
-    elif 180 < heading < 270:
-        direction = "SW"
-    elif heading == 270:
-        direction = "west"
-    elif 270 < heading <= 359:
-        direction = "NW"
-    else:
-        direction = "foutje"
-
-    return direction
 
 # inits
 start = time.perf_counter()
